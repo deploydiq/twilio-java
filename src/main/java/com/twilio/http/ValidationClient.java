@@ -67,6 +67,8 @@ public class ValidationClient extends HttpClient {
 
         if (request.requiresAuthentication()) {
             builder.addHeader(HttpHeaders.AUTHORIZATION, request.getAuthString());
+        } else {
+            String x = "sdfd";
         }
 
         HttpMethod method = request.getMethod();
