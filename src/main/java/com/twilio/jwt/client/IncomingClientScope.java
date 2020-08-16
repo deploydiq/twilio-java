@@ -19,7 +19,7 @@ public class IncomingClientScope implements Scope {
 
     @Override
     public String getPayload() throws UnsupportedEncodingException {
-        String query = Joiner.on('=').join("clientName", this.clientName);
+        String query = Joiner.on('=').join("client", this.clientName);
         return Joiner.on('?').join(SCOPE, query);
     }
 }
