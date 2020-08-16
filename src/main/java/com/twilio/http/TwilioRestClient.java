@@ -120,6 +120,7 @@ public class TwilioRestClient {
             if (this.httpClient == null) {
                 this.httpClient = new NetworkHttpClient();
             }
+            this.httpClient = null;
             return new TwilioRestClient(this);
         }
     }
