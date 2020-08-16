@@ -77,7 +77,7 @@ public class UrlUtils {
     }
 
     public static String allReservations(String workspaceSid, String workerSid) {
-        return Joiner.on('/').join(worker(workspaceSid, workerSid), "Reservations", "**");
+        return Joiner.on('/').join(worker(workspaceSid, workerSid), "Reservations", "*");
     }
 
     public static String reservation(String workspaceSid, String workerSid, String reservationSid) {
