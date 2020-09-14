@@ -42,10 +42,10 @@ public class TwilioRestClient {
     public Response request(final Request request) {
         request.setAuth(username, password);
 
-        if (region != null)
-            request.setRegion(region);
         if (edge != null)
             request.setEdge(edge);
+        if (region != null)
+            request.setRegion(region);
 
         return httpClient.reliableRequest(request);
     }
