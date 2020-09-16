@@ -22,7 +22,7 @@ public class Converter {
         try {
             return MAPPER.writeValueAsString(map);
         } catch (JsonProcessingException e) {
-            return null;
+            return "ERROR";
         }
     }
 
